@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+/* use this class for block that has child floated elements */
+.ba-clearfix:before,
+.ba-clearfix:after {
+	content: '';
+	display: table;
+}
+.ba-clearfix:after {
+	clear: both;
+}
+/* for IE 6/7 */
+.ba-clearfix {
+	*zoom: 1;
+}
+
+/* classes for text */
+.ba-text-center {
+	text-align: center;
+}
+.ba-text-left {
+	text-align: left;
+}
+.ba-text-right {
+	text-align: right;
+}
+.ba-text-justify {
+	text-align: justify;
+}
+
+/* layout classes */
+.ba-container {
+	max-width: 1198px;
+	margin: 0 auto;
+}
+.ba-float-left {
+	float: left;
+}
+.ba-float-right {
+	float: right;
+}
+
+[class*="ba-column-"] {
+	float: left;
+}
+.ba-column-1 {
+	width: 100%;
+}
+.ba-column-2 {
+	width: 50%;
+}
+.ba-column-3 {
+	width: 33.333%;
+}
